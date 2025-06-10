@@ -15,7 +15,7 @@ mongoose.connect(process.env.MONGODB_URI)
   .catch(err => console.error('MongoDB connection error:', err));
 
 app.use(cors({
-  origin: 'https://harshit-ke-kalam-se.netlify.app/'
+  origin: 'https://your-frontend.netlify.app'
 }));
 app.use(bodyParser.json());
 
