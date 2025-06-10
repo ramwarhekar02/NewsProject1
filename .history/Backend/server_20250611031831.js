@@ -378,7 +378,7 @@ app.get('*', (req, res, next) => {
   if (req.path.startsWith('/api/')) {
     return next();
   }
-  res.redirect('https://6848a7998bed9085f4375a05--harshit-ke-kalam-se.netlify.app/');
+  res.redirect('https://harshit-ke-kalam-se.netlify.app/');
 });
 
 app.get('/', (req, res) => {
