@@ -9,7 +9,7 @@ function App() {
   const [customization, setCustomization] = useState(null)
 
   useEffect(() => {
-    fetch('https://harshitkekalamse.onrender.com/api/customization')
+    fetch('http://localhost:5000/api/customization')
       .then(res => res.json())
       .then(data => setCustomization(data))
       .catch(err => console.error('Error fetching customization:', err))

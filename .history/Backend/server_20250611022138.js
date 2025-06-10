@@ -123,6 +123,7 @@ function authenticateToken(req, res, next) {
 
 app.get('/api/customization', async (req, res) => {
   try {
+    // Fetch the latest version
     let customization = await Customization.findOne().sort({ version: -1 });
 if (!customization) {
       customization = new Customization({

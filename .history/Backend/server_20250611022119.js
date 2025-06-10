@@ -72,11 +72,12 @@ const customizationSchema = new mongoose.Schema({
   localNewsArticles: [latestNewsArticleSchema],
   marqueeItems: [String],
 
+  // New fields for navbar and footer editable texts
   navbarCategories: [String],
   navbarLogoParts: {
-    part1: String, 
-    part2: String, 
-    part3: String
+    part1: String, // e.g., "News"
+    part2: String, // e.g., "Bihar"
+    part3: String  // e.g., "24/7"
   },
   footerLogoParts: {
     part1: String,
@@ -123,8 +124,10 @@ function authenticateToken(req, res, next) {
 
 app.get('/api/customization', async (req, res) => {
   try {
+    // Fetch the latest version
     let customization = await Customization.findOne().sort({ version: -1 });
 if (!customization) {
+      // Create default customization if none exists
       customization = new Customization({
         siteTitle: 'NewsBihar 24/7',
         footerLinks: [

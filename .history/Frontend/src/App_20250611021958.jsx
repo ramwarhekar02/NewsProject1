@@ -9,12 +9,13 @@ function App() {
   const [customization, setCustomization] = useState(null)
 
   useEffect(() => {
-    fetch('https://harshitkekalamse.onrender.com/api/customization')
+    fetch('http://localhost:5000/api/customization')
       .then(res => res.json())
       .then(data => setCustomization(data))
       .catch(err => console.error('Error fetching customization:', err))
   }, [])
 
+  // Fixed header and footer links to prevent admin changes
   const fixedNavbarCategories = ["Home", "Contact", "About"];
   const fixedFooterQuickLinksCategories = customization ? customization.footerQuickLinksCategories : [];
 

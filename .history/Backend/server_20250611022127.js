@@ -123,8 +123,10 @@ function authenticateToken(req, res, next) {
 
 app.get('/api/customization', async (req, res) => {
   try {
+    // Fetch the latest version
     let customization = await Customization.findOne().sort({ version: -1 });
 if (!customization) {
+      // Create default customization if none exists
       customization = new Customization({
         siteTitle: 'NewsBihar 24/7',
         footerLinks: [
