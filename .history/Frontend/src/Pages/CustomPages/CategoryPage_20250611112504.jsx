@@ -12,7 +12,7 @@ const CategoryPage = () => {
   useEffect(() => {
     const fetchCategoryArticles = async () => {
       try {
-        const response = await fetch(`https://harshitkekalamse.onrender.com/api/news/category/${categoryName}`);
+        const response = await fetch(`https://harshitkekalamse.onrender.com//api/news/category/${categoryName}`);
         if (!response.ok) {
           throw new Error('Failed to fetch category articles');
         }

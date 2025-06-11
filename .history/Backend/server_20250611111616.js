@@ -9,7 +9,320 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const SECRET_KEY = process.env.JWT_SECRET;
 
-const FRONTEND_URL = 'https://harshit-ke-kalam-se.vercel.app/';
+const FRONTEND_URL = 'Fetch error: <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page not found</title>
+    <style>
+      :root {
+        --colorRgbFacetsTeal600: 2 128 125;
+        --colorTealAction: var(--colorRgbFacetsTeal600);
+        --colorRgbFacetsNeutralLight200: 233 235 237;
+        --colorHr: var(--colorRgbFacetsNeutralLight200);
+        --colorRgbFacetsNeutralLight700: 53 58 62;
+        --colorGrayDarkest: var(--colorRgbFacetsNeutralLight700);
+        --colorGrayLighter: var(--colorRgbFacetsNeutralLight200);
+        --colorText: var(--colorGrayDarkest);
+        --effectShadowLightShallow: 0 1px 10px 0 rgb(53 58 62 / 6%),
+          0 2px 4px 0 rgb(53 58 62 / 8%);
+        --colorRgbFacetsNeutralDark900: 6 11 16;
+      }
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol";
+        background: white;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        color: rgb(var(--colorText));
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: rgb(var(--colorRgbFacetsNeutralDark900));
+        }
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 1.375rem;
+        line-height: 1;
+      }
+
+      h1 + p {
+        margin-top: 8px;
+      }
+
+      .main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+      }
+
+      .card {
+        position: relative;
+        width: 75%;
+        max-width: 364px;
+        padding: 24px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: var(--effectShadowLightShallow);
+        border: 1px solid rgb(var(--colorGrayLighter));
+      }
+
+      a {
+        margin: 0;
+        font-weight: 600;
+        color: rgb(var(--colorTealAction));
+        text-decoration-skip-ink: all;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 2px;
+        text-decoration-color: rgb(var(--colorTealAction) / 0.5);
+        transition: text-decoration-color 0.15s ease-in-out;
+      }
+
+      a:hover,
+      a:focus-visible {
+        text-decoration-color: rgb(var(--colorTealAction));
+      }
+
+      p:last-of-type {
+        margin-bottom: 0;
+      }
+
+      hr {
+        border: 0;
+        height: 1px;
+        background: rgb(var(--colorHr));
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+      .your-site {
+        font-size: 0.875rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="card">
+        <h1>Page not found</h1>
+        <p>
+          Looks like you’ve followed a broken link or entered a URL that doesn’t
+          exist on this site.
+        </p>
+        <hr />
+        <p class="your-site">
+          If this is your site, and you weren’t expecting a 404 for this path,
+          please visit Netlify’s
+          <a
+            href="https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125?utm_source=404page&utm_campaign=community_tracking"
+            >“page not found” support guide</a
+          >
+          for troubleshooting tips.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+overrideMethod @ hook.js:608Understand this error
+hook.js:608 Failed to fetch customization data: Error: Failed to fetch customization data
+    at index-Q-vkZEnx.js:294:178951
+overrideMethod @ hook.js:608Understand this error
+hook.js:608 Fetch error: <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page not found</title>
+    <style>
+      :root {
+        --colorRgbFacetsTeal600: 2 128 125;
+        --colorTealAction: var(--colorRgbFacetsTeal600);
+        --colorRgbFacetsNeutralLight200: 233 235 237;
+        --colorHr: var(--colorRgbFacetsNeutralLight200);
+        --colorRgbFacetsNeutralLight700: 53 58 62;
+        --colorGrayDarkest: var(--colorRgbFacetsNeutralLight700);
+        --colorGrayLighter: var(--colorRgbFacetsNeutralLight200);
+        --colorText: var(--colorGrayDarkest);
+        --effectShadowLightShallow: 0 1px 10px 0 rgb(53 58 62 / 6%),
+          0 2px 4px 0 rgb(53 58 62 / 8%);
+        --colorRgbFacetsNeutralDark900: 6 11 16;
+      }
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol";
+        background: white;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        color: rgb(var(--colorText));
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: rgb(var(--colorRgbFacetsNeutralDark900));
+        }
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 1.375rem;
+        line-height: 1;
+      }
+
+      h1 + p {
+        margin-top: 8px;
+      }
+
+      .main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+      }
+
+      .card {
+        position: relative;
+        width: 75%;
+        max-width: 364px;
+        padding: 24px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: var(--effectShadowLightShallow);
+        border: 1px solid rgb(var(--colorGrayLighter));
+      }
+
+      a {
+        margin: 0;
+        font-weight: 600;
+        color: rgb(var(--colorTealAction));
+        text-decoration-skip-ink: all;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 2px;
+        text-decoration-color: rgb(var(--colorTealAction) / 0.5);
+        transition: text-decoration-color 0.15s ease-in-out;
+      }
+
+      a:hover,
+      a:focus-visible {
+        text-decoration-color: rgb(var(--colorTealAction));
+      }
+
+      p:last-of-type {
+        margin-bottom: 0;
+      }
+
+      hr {
+        border: 0;
+        height: 1px;
+        background: rgb(var(--colorHr));
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+      .your-site {
+        font-size: 0.875rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="card">
+        <h1>Page not found</h1>
+        <p>
+          Looks like you’ve followed a broken link or entered a URL that doesn’t
+          exist on this site.
+        </p>
+        <hr />
+        <p class="your-site">
+          If this is your site, and you weren’t expecting a 404 for this path,
+          please visit Netlify’s
+          <a
+            href="https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125?utm_source=404page&utm_campaign=community_tracking"
+            >“page not found” support guide</a
+          >
+          for troubleshooting tips.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+overrideMethod @ hook.js:608Understand this error
+hook.js:608 Failed to fetch customization data: Error: Failed to fetch customization data
+    at index-Q-vkZEnx.js:294:178951
+overrideMethod @ hook.js:608Understand this error
+hook.js:608 Error fetching customization: TypeError: Failed to fetch
+    at window.fetch (frame_ant.js:2:11940)
+    at index-Q-vkZEnx.js:294:288347
+    at react-stack-bottom-frame (index-Q-vkZEnx.js:260:13563)
+    at Oe (index-Q-vkZEnx.js:76:109)
+    at Co (index-Q-vkZEnx.js:181:24688)
+    at N0 (index-Q-vkZEnx.js:194:1133)
+    at M0 (index-Q-vkZEnx.js:194:19625)
+    at Cs (index-Q-vkZEnx.js:194:19509)
+    at M0 (index-Q-vkZEnx.js:194:20359)
+    at Cs (index-Q-vkZEnx.js:194:19509)
+overrideMethod @ hook.js:608Understand this error
+frame_ant.js:2 
+            
+            
+           
+        
+       Uncaught (in promise) TypeError: Failed to fetch
+    at window.fetch (frame_ant.js:2:11940)
+    at index-Q-vkZEnx.js:294:288347
+    at react-stack-bottom-frame (index-Q-vkZEnx.js:260:13563)
+    at Oe (index-Q-vkZEnx.js:76:109)
+    at Co (index-Q-vkZEnx.js:181:24688)
+    at N0 (index-Q-vkZEnx.js:194:1133)
+    at M0 (index-Q-vkZEnx.js:194:19625)
+    at Cs (index-Q-vkZEnx.js:194:19509)
+    at M0 (index-Q-vkZEnx.js:194:20359)
+    at Cs (index-Q-vkZEnx.js:194:19509)Understand this error
+hook.js:608 Error fetching customization: TypeError: Failed to fetch
+    at window.fetch (frame_ant.js:2:11940)
+    at index-Q-vkZEnx.js:294:288347
+    at react-stack-bottom-frame (index-Q-vkZEnx.js:260:13563)
+    at Oe (index-Q-vkZEnx.js:76:109)
+    at Co (index-Q-vkZEnx.js:181:24688)
+    at N0 (index-Q-vkZEnx.js:194:1133)
+    at P0 (index-Q-vkZEnx.js:194:20565)
+    at Qi (index-Q-vkZEnx.js:194:20451)
+    at P0 (index-Q-vkZEnx.js:194:20816)
+    at ob (index-Q-vkZEnx.js:207:1136)
+overrideMethod @ hook.js:608Understand this error
+frame_ant.js:2 
+            
+            
+           
+        
+       Uncaught (in promise) TypeError: Failed to fetch
+    at window.fetch (frame_ant.js:2:11940)
+    at index-Q-vkZEnx.js:294:288347
+    at react-stack-bottom-frame (index-Q-vkZEnx.js:260:13563)
+    at Oe (index-Q-vkZEnx.js:76:109)
+    at Co (index-Q-vkZEnx.js:181:24688)
+    at N0 (index-Q-vkZEnx.js:194:1133)
+    at P0 (index-Q-vkZEnx.js:194:20565)
+    at Qi (index-Q-vkZEnx.js:194:20451)
+    at P0 (index-Q-vkZEnx.js:194:20816)
+    at ob (index-Q-vkZEnx.js:207:1136)';
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI)
