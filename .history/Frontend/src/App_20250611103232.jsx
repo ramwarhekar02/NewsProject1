@@ -12,6 +12,7 @@ function App() {
     fetch('/api/customization')
       .then(res => res.json())
       .then(data => {
+        // Remove translation JSON integration by directly setting data
         setCustomization(data)
       })
       .catch(err => console.error('Error fetching customization:', err))

@@ -34,6 +34,8 @@ const Footer = ({ footerLogoParts, footerDescription, footerContactInfo, footerQ
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors duration-300">
               <FaTwitter size={18} />
             </a>
+              <FaTwitter size={18} />
+            </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 transition-colors duration-300">
               <FaInstagram size={18} />
             </a>
@@ -45,42 +47,42 @@ const Footer = ({ footerLogoParts, footerDescription, footerContactInfo, footerQ
 
         {/* Navigation links */}
         <div className="w-1/2 md:w-auto">
-          <h3 className="text-white font-semibold mb-4">Quick Links</h3>
+          <h3 className="text-white font-semibold mb-4">{t('footer.quickLinks')}</h3>
           <ul className="space-y-2">
             <li>
-              <Link to="/" className="hover:text-white transition-colors duration-300">Home</Link>
+              <Link to="/" className="hover:text-white transition-colors duration-300">{t('footer.home')}</Link>
             </li>
             <li>
-              <Link to="/about" className="hover:text-white transition-colors duration-300">About</Link>
+              <Link to="/about" className="hover:text-white transition-colors duration-300">{t('footer.about')}</Link>
             </li>
             <li>
-              <Link to="/contact" className="hover:text-white transition-colors duration-300">Contact</Link>
+              <Link to="/contact" className="hover:text-white transition-colors duration-300">{t('footer.contact')}</Link>
             </li>
             <li>
-              <Link to="/advertise" className="hover:text-white transition-colors duration-300">Advertise</Link>
+              <Link to="/advertise" className="hover:text-white transition-colors duration-300">{t('footer.advertise')}</Link>
             </li>
           </ul>
         </div>
 
         {/* Contact & Subscribe */}
         <div className="w-full md:w-auto md:max-w-xs">
-          <h3 className="text-white font-semibold mb-4">Contact Us</h3>
+          <h3 className="text-white font-semibold mb-4">{t('footer.contactUs')}</h3>
           <p className="text-gray-400 mb-4">
-            Email: {contactInfo.email || 'harshit@kalamse.com'}<br/>
-            Phone: {contactInfo.phone || '+91 98765 43210'}<br/>
-            Address: {contactInfo.address || 'Creative Corner, Nashik, India'}
+            {t('footer.email')}: {contactInfo.email || 'harshit@kalamse.com'}<br/>
+            {t('footer.phone')}: {contactInfo.phone || '+91 98765 43210'}<br/>
+            {t('footer.address')}: {contactInfo.address || 'Creative Corner, Nashik, India'}
           </p>
           <form className="flex">
             <input
               type="email"
-              placeholder="Your Email"
+              placeholder={t('footer.subscribePlaceholder', 'Your Email')}
               className="w-full px-3 py-2 rounded-l-md bg-gray-800 text-gray-300 placeholder-gray-500 focus:outline-none"
             />
             <button
               type="submit"
               className="bg-red-600 hover:bg-red-700 text-white px-4 rounded-r-md transition-colors duration-300"
             >
-              Subscribe
+              {t('footer.subscribeButton', 'Subscribe')}
             </button>
           </form>
         </div>

@@ -12,6 +12,7 @@ function App() {
     fetch('/api/customization')
       .then(res => res.json())
       .then(data => {
+        // Remove translation JSON integration by directly setting data
         setCustomization(data)
       })
       .catch(err => console.error('Error fetching customization:', err))
@@ -23,9 +24,9 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <Header navbarCategories={fixedNavbarCategories} />
+      {customization && <Header navbarCategories={fixedNavbarCategories} navbarLogoParts={customization.navbarLogoParts} marqueeItems={customization.marqueeItems} />}
       <AppRoutes />
-      <Footer />
+      {customization && <Footer footerLogoParts={customization.footerLogoParts} footerDescription={customization.footerDescription} footerContactInfo={customization.footerContactInfo} footerQuickLinksCategories={fixedFooterQuickLinksCategories} />}
     </BrowserRouter>
   )
 }
