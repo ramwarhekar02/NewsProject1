@@ -375,13 +375,12 @@ app.get('/api/news/category/:category', async (req, res) => {
 
 // app.use(expressStaticMiddleware);
 
-// Catch-all route to handle non-API requests without redirecting
+// Catch-all route to redirect to frontend URL
 app.get('*', (req, res, next) => {
   if (req.path.startsWith('/api/')) {
     return next();
   }
-  // Instead of redirecting, respond with a JSON message or frontend URL
-  res.json({ message: 'Frontend URL is ' + FRONTEND_URL });
+  res.redirect(FRONTEND_URL);
 });
 
 app.get('/', (req, res) => {

@@ -375,22 +375,16 @@ app.get('/api/news/category/:category', async (req, res) => {
 
 // app.use(expressStaticMiddleware);
 
-// Catch-all route to handle non-API requests without redirecting
+// Catch-all route to redirect to frontend URL
 app.get('*', (req, res, next) => {
   if (req.path.startsWith('/api/')) {
     return next();
   }
-  // Instead of redirecting, respond with a JSON message or frontend URL
-  res.json({ message: 'Frontend URL is ' + FRONTEND_URL });
+  res.redirect('https://6848a7998bed9085f4375a05--harshit-ke-kalam-se.netlify.app/');
 });
 
 app.get('/', (req, res) => {
   res.send('NewsBihar API is running.');
-});
-
-// New endpoint to get frontend URL
-app.get('/api/frontend-url', (req, res) => {
-  res.json({ frontendUrl: FRONTEND_URL });
 });
 
 app.listen(PORT, () => {
